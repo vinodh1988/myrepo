@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/home.css" rel="stylesheet"/>
+        <link href="../styles/central.css" rel="stylesheet"/>
+         <link href="../styles/product.css" rel="stylesheet"/>
+         <script src="../lib/jquery-3.1.0.js"></script>
+        <script src="../templates/handlebars-v4.0.5.js"></script>
+        <script src="../templates/productshow.js"></script>    
+        <script src="../scripts/fillcat.js"></script>
+        <script src="../scripts/filladmin.js"></script>
+        <script src="../scripts/jqevents.js"></script>
+        
+        
+    </head>
+    <body>
+        <!-- Header Component -->
+        <div id="header">
+            <div id="logo">Shopp-I</div>     
+            <div id="logo-caption">One stop solution for all your shopping needs</div>
+            <div id="sign">Sign in</div>
+        </div>
+        <div id="content">
+            
+        </div>
+        <!-- Header Component ends here -->
+        
+        <!-- Central page-->
+        <div id="central">
+            <div id="central-left">
+                <div id="category-menu">
+                    <div id="category-menu-head">Browse by Category</div>
+                    <div id="category-menu-body">
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div id="central-right"></div>
+        </div>
+        
+        <!-- Central Division ends here  -->
+        <!-- Login component code goes here-->
+        <div id="login">
+            <div id="loginwrap">
+                <div id="login-head">&nbsp;&nbsp;&nbsp;Login<img src="../images/cb.png" id="cb"></div>
+            <div id="login-body">
+            <table>
+                <tr>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <input type="text" name="email">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        password
+                    </td>
+                    <td>
+                        <input type="password" name="password">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                   <center>
+                    <input type="button" id="lb" value="login">
+                   </center>
+                    </td>
+                </tr>
+            </table>
+           </div>
+            </div>
+        </div>
+        <!--login component code ends here-->
+        
+        <!--Product template definition-->
+          <script id="prod" type="text/x-handlebars-template">​
+             
+              <div class='prod-wrap' id='{{pid}}'>
+                 <div class='prod-pic'>
+                 <img src='{{url}}'>
+                 </div>
+                 <div class='prod-details'>
+					{{ptext}}
+                 </div>
+                 <div class='prod-ops'>
+                    <img src="../images/minus.png"></img>
+                    <div class="pcount">1</div>
+                    <img src="../images/plus.png"></img>
+                 </div>
+                 <div class='prod-cart'>
+                    <input type="button" id="cartadd" value="add to cart">
+                 </div>
+                </div>
+             
+          </script>
+        <!--Product template definition ends here-->
+    </body>
+</html>

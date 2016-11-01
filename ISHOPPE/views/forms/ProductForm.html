@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../styles/home.css" rel="stylesheet">
+        <link href="../../styles/productform.css" rel="stylesheet">
+        <script src="../../lib/jquery-3.1.0.js"></script>
+        <script src="../../scripts/ProductForm/prodvalidation.js"></script>
+        <script src="../../scripts/ProductForm/productOps.js"></script>
+    </head>
+    <body>
+        <div id="pform" align="center">
+            <form method="post" action="../../server/ProductForm/Controller/ProductStore.php">
+            <table>
+                <tr>
+                    <th>Product Name</th>
+                    <td><input type="text" name="pname" id="pname"></td>
+                    <td id="pn" class="msg"></td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td><input type="text" name="pdesc" id="pdesc"></td>
+                    <td id="pd" class="msg"></td>
+                </tr>
+                <tr>
+                    <th>Product type</th>
+                    <td><select name="ptype" id="ptype"></select></td>
+                    <td id="pt" class="msg"></td>
+                </tr>
+                <tr>
+                    <th>Product sub type</th>
+                    <td><select name="pstype" id="pstype"></select></td>
+                    <td id="pst" class="msg"></td>
+                </tr>
+                 <tr>
+                     <th>Price</th>
+                    <td><input type="text" name="price" id="price"></td>
+                    <td id="pr" class="msg"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;padding: 20px;">
+                        <input type="button" value="Add Product" id="sub">
+                    </td>
+                </tr>
+            </table>
+        </form>
+       </div>
+    </body>
+    
+</html>

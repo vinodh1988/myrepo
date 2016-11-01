@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 Nov, 2016, 11:19:59 AM
+    Author     : vinodh
+*/
+
+.ishoppe-table td,th{
+    width: 150px;
+    height:30px;
+    padding: 3px;
+}
+
+.ishoppe-table th{
+    color: white;
+    font: fabrica;
+    background-color: lightcoral;
+}
+
+.ishoppe-table td{
+    color: indianred;
+    background-color: floralwhite;
+}
+
+.ishoppe-table td:hover{
+    color: indianred;
+    background-color: darksalmon;
+}

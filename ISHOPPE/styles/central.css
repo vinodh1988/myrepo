@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 Oct, 2016, 10:30:22 AM
+    Author     : vinodh
+*/
+
+#central{
+    margin: 20px;
+    width: 90%;
+    padding: 20px;
+    min-height: 800px;
+}
+
+#central-left{
+    width: 24%;
+    
+    margin: 10px;
+    float: left;
+    min-height: 500px;
+}
+
+#central-right{
+    width:67%;
+    margin: 10px;
+    float: left;
+    min-height: 500px;
+    
+}
+#category-menu
+{
+    width: 95%;
+    margin: 5px;
+    box-shadow:2px 2px 2px black;
+}
+#category-menu-head{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color:lightcoral;
+    color: white;
+    font-family: fabrica;
+    height: 25px;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+#category-menu-body{
+    border: 2px solid lightcoral;
+    min-height: 100px;
+}
+
+.main-menu li
+{
+  height: 23px;
+  width: 200px;
+  padding: 3px;
+  list-style-type: none;
+  border: 1px dashed indianred;
+  background-color: floralwhite;
+  font-family: fabrica;
+  color: indianred;
+  cursor: pointer;
+}
+
+#central-right iframe{
+    width: 100%;
+    min-height: 700px;
+    border: none;
+}
+
+.main-menu a:link,a:hover,a:visited{
+    text-decoration: none;
+    color: indianred;
+}

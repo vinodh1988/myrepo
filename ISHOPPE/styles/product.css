@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 Oct, 2016, 3:39:39 PM
+    Author     : vinodh
+*/
+
+.prod-wrap{
+    margin: 20px;
+    padding: 10px;
+    height: 280px;
+    width: 200px;
+    
+    float:left;
+    box-shadow:5px 5px 5px gray;
+}
+
+.prod-pic img{
+    width: 180px;
+    height: 150px;
+    margin: 10px;
+}
+
+.prod-details{
+    height:30px;
+    padding: 5px;
+    width:190px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.prod-ops img{
+    height: 20px;
+    width: 20px;
+    float:left;
+}
+
+.prod-ops .pcount{
+    height: 30px;
+    padding: 4px;
+    width: 150px;
+    float:left;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: indianred;
+}
+
+.prod-cart input[type="button"]{
+    background-color: crimson;
+    color: white;
+    font: fabrica;
+    margin-left: 50px;
+    width: 100px;
+    padding: 5px;
+    border: none;
+    height: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prod-cart input[type="button"]:hover{
+    background-color: black;
+    color: white;
+    font: fabrica;
+    margin-left: 50px;
+    width: 100px;
+    padding: 5px;
+    border: none;
+    height: 25px;
+    font-weight: bold;
+}

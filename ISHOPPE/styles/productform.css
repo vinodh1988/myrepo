@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30 Oct, 2016, 7:00:02 PM
+    Author     : vinodh
+*/
+
+#pform th,#pform td{
+    height: 30px;
+    width: 150px;
+    padding: 3px;
+    text-align: left;
+    font-family: fabrica;
+}
+
+#pform{
+     box-shadow: 5px 5px 5px lightgray;
+     min-height: 400px;
+     min-width: 550px;
+     padding: 50px;
+     border:1px solid cornsilk;
+}
+
+.msg{
+    color: crimson;
+}

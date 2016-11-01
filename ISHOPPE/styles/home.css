@@ -1,0 +1,166 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 Oct, 2016, 3:25:47 PM
+    Author     : vinodh
+*/
+@font-face{
+    font-family: 'myfont';
+    src: url('generousDEMO.otf');
+}
+
+@font-face{
+    font-family: 'hw';
+    src: url('xxx.TTF');
+}
+
+@font-face{
+    font-family: 'fabrica';
+    src: url('Fabrica.otf');
+}
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+#header{
+    width: 100%;
+    height: 60px;
+    background-color: lightcoral;
+    color: white;
+    font-size: 30px;
+    z-index: 1;
+    
+}
+
+#logo{
+    color: white;
+    size: 30px;
+    font-family: myfont;
+    position: relative;
+    top: 15px;
+    left: 50px;
+    float: left;
+}
+
+#logo-caption{
+    color: crimson;
+    font-family: hw;
+    font-size: 25px;
+    float: left;
+    position: relative;
+    top: 15px;
+    left: 100px;
+    
+}
+
+#sign{
+    font-family: serif;
+    font-size: 16px;
+    width: 60px;
+    height:20px;
+    padding: 5px;
+    color: white;
+    background-color: firebrick;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    left: 800px;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+#sign:hover {
+    font-family: serif;
+    font-size: 16px;
+    width: 60px;
+    height:20px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    left: 800px;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+#login{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 2;
+    display: none;
+}
+
+#loginwrap{
+    width: 300px;
+    height: 200px;
+    box-shadow: 5px 10px 10px gray;
+    background: white;
+    position: absolute;
+    left: 30%;
+    top:25%;
+}
+
+#login-head{
+    background:lightcoral;
+    height: 30px;
+    width: 100%;
+    
+}
+#login-body{
+    width: 100%;
+    padding-top: 20px;
+    
+}
+
+input[type="text"],input[type="password"],select{
+    border-radius: 5px;
+    border: 1px solid gray;
+    height:25px;
+    min-width: 200px;
+    background-color: white;
+}
+
+input[type="button"]{
+    background-color: crimson;
+    color: white;
+    border: none;
+    height: 30px;
+    min-width: 70px;
+}
+
+input[type="button"]:hover{
+    background-color: black;
+    color: white;
+    border: none;
+    height: 30px;
+    min-width: 70px;
+}
+
+#login td{
+   padding: 5px; 
+}
+
+#login img{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: 220px;
+    top: 5px;
+    cursor: pointer;
+}
