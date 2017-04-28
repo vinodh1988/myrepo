@@ -1,0 +1,94 @@
+<html>
+
+ <title>Audio Track Store</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style/style.css" rel="stylesheet">
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="angular/angular.min.js"></script>
+	<script src="angular/angular-resource.min.js"></script>
+	<script src="controllers/work.js"></script>
+	<script src="controllers/rating.js"></script>
+	
+ <head>
+   <body ng-app="mymod" ng-controller="mycontroller" >
+	  <nav class="navbar navbar-inverse">
+	    <ul class="nav navbar-nav">
+		   <li ng-click="homeClick($event)"><a href><span class="glyphicon glyphicon-home"></span>Home</a></li>  
+		   <li><a href><span class="glyphicon glyphicon-headphones"></span>Genres</a></li>  
+		</ul> 
+	  </nav>
+	  <div ng-hide="searchbox" id="head" class="row ng-hide">
+	      <div class="col-xs-12" align="center">
+			  <form>
+		     <input type="text" ng-model="tracksearch">
+		    <button class="btn btn-primary" ng-click="searchString()">Search</button>
+			  </form>
+		  </div>
+	   </div>
+	   
+	  <div ng-hide="homeflag" id="container row ng-hide" align="center">
+	    <ul class="list-group" >
+		   <li  ng-repeat="x in tracks.results" class="list-group-item list-group-item-info">{{x.title}}
+			   <span class="label label-warning rating-widget"><div class="star-rating" star-rating rating-value="x.rating"
+
+ data-max="5" ></div></span>
+			</li>
+		</ul>
+	 <!---Home page Division containing sound tracks --->
+	   <div class="row alert alert-primary" ng-controller="pagination" align="center">
+		  <button class="btn btn-danger" ng-click="previous()">prev</button>
+	      <ul class="pagination" >
+			  <li ng-repeat="n in iter" ><button ng-click="changePage(n);" class="btn btn-primary">{{n}}</button></li>
+          </ul>
+		  <button  class="btn btn-danger" ng-click="next()">next</button>
+	   </div>
+		  <div class="row" ><input type="button" class="btn btn-primary" ng-click="additem($event)" value="add New Track">
+		  </div>
+		   </div>
+	   
+	   <!-- End  -->
+	   
+	  <!-Search result Division -->
+	  <div ng-hide="searchflag" class="row ng-hide" align="center" id="search">
+	   <ul class="list-group" >
+		   <li  ng-repeat="x in searchresults.results" class="list-group-item list-group-item-info">{{x.title}}
+			   <span class="label label-warning rating-widget"><div class="star-rating" star-rating rating-value="x.rating"
+
+             data-max="5" ></div></span>
+			</li>
+		</ul>
+		  <div class="alert alert-info" ng-if="searchresults.results.length==0">No results found</div>
+	  </div>
+	   <!---- end search result -->
+	   
+	   <!--Add new Track -->
+	     <div class="row ng-hide" align="center" id="new track" ng-hide="addtrack">
+	     <table>
+	        <tr>
+				<th>Track Name</th>
+				<td><input type="text" ng-model="tname"></td>
+			</tr>
+			<tr>
+				<th>Track Name</th>
+				<td><input type="range" min=1 max=5 ng-model="rating"></td>
+			</tr>
+			 
+			 <tr>
+				<th>Genre</th>
+				<td><select ng-model="genre"><option ng-repeat="x in genreNames" value={{x.id}}>{{x.name}}</option></select></td>
+			</tr>
+			 
+			 <tr><td colspan="2" align="Center"><button class="btn btn-primary" ng-click="newtrack()">Add Track</button></td>
+	     </table>
+	     </div>
+	   
+	   <!-- Ends Here -->
+	  <div id="foot">
+       <div class="well" align="center">Powered by Angular JS  2017</div>	     
+	  
+	   </div>
+   </body>	
+</head>
+</body>
+</html>
